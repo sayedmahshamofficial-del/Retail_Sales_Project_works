@@ -1,0 +1,38 @@
+RETAIL SALES EDA FINDINGS
+==================================================
+
+Raw rows: 3665 | After removing duplicates: 3650 (15 duplicates removed)
+Rows with implausible zero Unit_Price: 25
+Rows with missing Avg_Customer_Age: 30
+
+Total revenue by category:
+Category
+Electronics    4331407.38
+Furniture      2189469.56
+Clothing       1744531.77
+Groceries      1390357.55
+Toys            728381.37
+
+Average daily revenue by weekday:
+Weekday
+Monday       2644.170000
+Tuesday      2676.141276
+Wednesday    2638.721212
+Thursday     2654.654577
+Friday       2656.933885
+Saturday     3317.694635
+Sunday       3330.042250
+
+Average daily revenue: promotion vs no promotion:
+Promotion_Label
+No Promotion    2753.084337
+Promotion       3624.226675
+
+Correlation matrix:
+                  Units_Sold  Unit_Price   Revenue  Customer_Count  Avg_Customer_Age  Promotion
+Units_Sold          1.000000   -0.599500 -0.184283        0.949875         -0.008656   0.088334
+Unit_Price         -0.599500    1.000000  0.509020       -0.566427         -0.008395  -0.000723
+Revenue            -0.184283    0.509020  1.000000       -0.175460         -0.010690   0.133644
+Customer_Count      0.949875   -0.566427 -0.175460        1.000000         -0.015958   0.079946
+Avg_Customer_Age   -0.008656   -0.008395 -0.010690       -0.015958          1.000000   0.015348
+Promotion           0.088334   -0.000723  0.133644        0.079946          0.015348   1.000000

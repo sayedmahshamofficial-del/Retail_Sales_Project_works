@@ -1,0 +1,11 @@
+SALES PREDICTION MODEL RESULTS
+==================================================
+
+Model: RandomForestRegressor(n_estimators=300, max_depth=10)
+Train rows: 3075 | Test rows: 540
+Split date: train up to 2025-09-13, test after
+
+MAE: 676.56
+RMSE: 1,051.84
+MAPE: 18.75%
+R2 Score: 0.8165
